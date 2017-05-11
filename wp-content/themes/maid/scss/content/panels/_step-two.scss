@@ -1,0 +1,49 @@
+.step-two {
+	position: relative;
+	z-index: 1;
+}
+
+.call-boxes {
+	text-align: center;
+	margin-top: $column-gutter;
+
+	h4 {
+		color: $primary-color;
+		line-height: 1.1;
+	}
+
+	svg {
+		height: 56px;
+	}
+
+	.box-wrapper {
+		border: 2px solid $secondary-color;
+		padding: 15px 20px;
+		max-width: 330px;
+		margin: 0 auto 60px auto;
+		@extend %transition;
+		&:hover {
+			background-color: $primary-color;
+			border: 2px solid $primary-color;
+			h4,
+			p {
+				color: $white;
+			}
+		}
+		@include mq($mq-large) {
+			margin: auto;
+		}
+
+		p {
+			margin-bottom: 0;
+			line-height: 1.1;
+			white-space: nowrap;
+		}
+	}
+}
+
+.reduced {
+	margin-bottom: $section-spacing;
+	margin-top: $column-gutter;
+
+}

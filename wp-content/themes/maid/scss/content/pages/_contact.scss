@@ -1,0 +1,42 @@
+.contact-page {
+	.welcome {
+		margin-bottom: 0;
+	}
+}
+
+#standard-form {
+	padding-top: $half-gutter;
+
+	.flex-outter {
+		display: flex;
+		flex-direction: column;
+		@include mq($mq-medium) {
+			flex-direction: row;
+		}
+
+		input {
+			justify-content: center;
+			&:first-of-type {
+				margin-right: $half-gutter;
+			}
+		}
+	}
+
+	textarea {
+		height: 150px;
+	}
+
+	.form-submit {
+		border: 1px solid #d16b20;
+		background-color: $primary-color;
+		color: $white;
+		font-size: rem-calc(24);
+		margin-bottom: $column-gutter;
+		font-family: $heading-font-family;
+		padding: 12px 20px;
+		&:hover {
+			background-color: $white;
+			color: $primary-color;
+		}
+	}
+}

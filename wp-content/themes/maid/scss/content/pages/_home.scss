@@ -1,0 +1,96 @@
+/*
+====================
+	HOME PAGE STYLES
+====================
+*/
+
+.services-icons {
+	background-color: $primary-color;
+	text-align: center;
+	padding: $section-spacing-small 0;
+	@include mq($mq-large) {
+		padding: $section-spacing 0;
+	}
+
+	h2 {
+		font-weight: $font-weight-normal;
+		color: $white;
+	}
+
+	.icon-service {
+		width: 90px;
+		height: 90px;
+		margin-bottom: 10px;
+		margin-top: $column-gutter;
+		@include mq($mq-medium) {
+			margin-top: 0;
+		}
+	}
+	.top {
+		margin-top: 0;
+	}
+	.bot {
+		margin-top: $column-gutter;
+		@include mq($mq-large) {
+			margin-top: 0;
+		}
+	}
+}
+
+.what-sets-us-apart {
+	text-align: center;
+	margin: $section-spacing-small 0;
+	@include mq($mq-large) {
+		margin: $section-spacing 0;
+	}
+
+	h2 {
+		margin-bottom: $column-gutter;
+	}
+
+	.icon-heading {
+		width: 68px;
+		height: 56px;
+		fill: $primary-color;
+		margin-bottom: 1rem;
+		@include mq($mq-medium) {
+			margin-bottom: $section-spacing-small;
+		}
+	}
+
+	.sparkle-me-silly {
+		position: relative;
+
+		.icon-sparkle-side {
+			position: absolute;
+			left: -65px;
+			top: 10px;
+			width: 68px;
+			height: 56px;
+			fill: $primary-color;
+			display: none;
+			@include mq($mq-large) {
+				display: block;
+			}
+		}
+
+		p {
+			color: $primary-color;
+			padding-top: 2.75rem;
+		}
+	}
+}
+
+.maid-team {
+	padding-top: rem-calc(150);
+	padding-bottom: rem-calc(150);
+	margin-bottom: $section-spacing-small;
+	@include mq($mq-medium) {
+		margin-bottom: $section-spacing;
+	}
+
+	h2 {
+		color: $white;
+		text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+	}
+}

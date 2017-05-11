@@ -1,0 +1,104 @@
+.footer-discount {
+	position: relative;
+	z-index: 1;
+	margin-bottom: $section-spacing;
+
+	.flex-outer {
+		display: block;
+		text-align: center;
+
+		@include mq(700px) {
+			display: flex;
+			text-align: left;
+			justify-content: center;
+			align-items: flex-end;
+			flex-direction: row;
+		}
+	}
+
+	.icon-vacuum-discount {
+		max-width: 150px;
+		max-height: 110px;
+		fill: $primary-color;
+		margin-right: $column-gutter;
+		margin-bottom: $half-gutter;
+		@include mq($mq-medium) {
+			max-width: 184px;
+			max-height: 134px;
+		}
+	}
+
+	.schedule-box {
+		max-width: rem-calc(420);
+		margin-bottom: rem-calc(14);
+		margin-left: auto;
+		margin-right: auto;
+		padding: rem-calc(20) rem-calc(30);
+		border: 2px solid $secondary-color;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		@extend %transition;
+		text-align: left;
+		@include mq(700px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&:hover {
+			background-color: $primary-color;
+			border-color: $primary-color;
+			svg {
+				fill: $white;
+			}
+
+			.heading,
+			.sub {
+				color: $white;
+			}
+		}
+
+		svg {
+			fill: $primary-color;
+			height: 40px;
+			width: 26px;
+			margin-right: rem-calc(16px);
+			@extend %transition;
+		}
+
+		.heading {
+			color: $primary-color;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			font-size: rem-calc(24);
+			font-family: $heading-font-family;
+			font-weight: $font-weight-bold;
+			line-height: 1;
+			@extend %transition;
+			@include mq($mq-medium) {
+				white-space: nowrap;
+			}
+		}
+
+		.sub {
+			color: $secondary-color;
+			margin-bottom: 0;
+			line-height: 1;
+			font-weight: bold;
+			@extend %transition;
+		}
+	}
+
+	.discount {
+		flex: 0 50%;
+		span {
+			color: $primary-color !important;
+		}
+	}
+}
+
+/* About Page */
+.page-id-8 {
+	.discount {
+		display: none;
+	}
+}

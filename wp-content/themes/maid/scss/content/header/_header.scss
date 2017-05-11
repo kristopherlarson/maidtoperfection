@@ -1,0 +1,84 @@
+/* 
+====================
+	MAIN HEADER STYLES
+====================
+*/
+
+.site-header {
+	min-height: 100px;
+	padding: rem-calc(14px) 0;
+	flex: none;
+	border-bottom: 6px solid $primary-color;
+	background-image: url('../images/header/tile-floor-background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	@include mq($mq-full) {
+		min-height: 116px;
+	}
+
+	.nav-row {
+		position: relative;
+		text-align: center;
+	}
+
+	.contact-us {
+		position: absolute;
+		top: 22px;
+		left: $half-gutter;
+		@include mq($mq-full) {
+			display: block;
+			top: 0;
+		}
+
+		svg {
+			width: 17px;
+			height: 29px;
+			display: inline-block;
+			fill: $primary-color;
+			@include mq($mq-medium) {
+				width: 12px;
+				height: 21px;
+			}
+		}
+
+		p {
+			display: none;
+			color: $primary-color;
+			font-family: $heading-font-family;
+			@include mq($mq-medium) {
+				display: inline-block;
+			}
+		}
+	}
+
+	.header-social {
+		position: absolute;
+		top: 0;
+		right: $half-gutter;
+		display: none;
+		@include mq($mq-full) {
+			display: block;
+		}
+
+		svg {
+			width: 23px;
+			height: 23px;
+			fill: $primary-color;
+			display: inline-block;
+			margin: 0 5px;
+		}
+	}
+
+	.mobile-logo {
+		display: inline-block;
+		@include mq($mq-full) {
+			display: none;
+		}
+
+		svg {
+			width: 80px;
+			height: 60px;
+		}
+	}
+}

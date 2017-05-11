@@ -1,0 +1,59 @@
+/* 
+====================
+	TRANSITIONS
+====================
+*/
+
+@keyframes scaleIn {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1
+	}
+}
+
+@keyframes glitter {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	25% {
+		transform: scale(0.5);
+		opacity: .1;
+	}
+	50% {
+		transform: scale(1.0);
+		opacity: .9;
+	}
+	75% {
+		transform: scale(0.4);
+		opacity: .1;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+// The default or standard transition
+%transition {
+	transition: all 0.50s ease-in-out;
+}
+
+// Remove transition
+%transition-none {
+	transition: none;
+}
+
+// The default opacity transition
+%transition-opacity {
+	transition: opacity 0.50s ease-in;
+}
+
+// The default fill transition
+%transition-fill {
+	transition: fill 0.50s ease-in;
+}

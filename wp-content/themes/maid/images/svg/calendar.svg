@@ -1,0 +1,19 @@
+<svg version="1.1" viewBox="0 0 56.7 54.8">
+<g>
+	<rect x="20.3" y="22.1" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="9.8" y="22.1" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="30.1" y="22.1" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="40.2" y="22.1" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="20.3" y="31" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="30.1" y="31" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="40.2" y="31" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="20.3" y="40.2" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="10.1" y="31" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="10.2" y="40.2" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="30.1" y="40.2" fill="#F68820" width="6.4" height="5.6"/>
+	<rect x="40.2" y="40.2" fill="#F68820" width="6.4" height="5.6"/>
+	<path fill="#F68820" d="M56.7,4l-8,0V9H41V4L16.8,4v5.2H9.1V4L0,4v50.8h4.1h48.6l4,0L56.7,4z M52.7,50.7H4.1V18.3h48.6V50.7z"/>
+	<rect x="10.6" fill="#F68820" width="4.8" height="7.9"/>
+	<rect x="42.5" fill="#F68820" width="4.8" height="7.9"/>
+</g>
+</svg>

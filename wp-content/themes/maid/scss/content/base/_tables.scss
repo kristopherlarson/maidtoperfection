@@ -1,0 +1,14 @@
+.base-content {
+
+	@include foundation-table;
+
+	.pricing-table {
+		border: 3px solid $primary-color;
+		padding: 30px;
+		margin-bottom: $section-spacing;
+
+		p {
+			margin-bottom: 6px;
+		}
+	}
+}

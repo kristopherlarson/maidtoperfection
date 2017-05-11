@@ -1,0 +1,129 @@
+.desktop-nav-active {
+
+	#main-navigation {
+		@include mq($mq-full) {
+			opacity: 1;
+			transition: opacity .15s ease;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	.main-nav {
+		width: $main-nav-width;
+		height: $main-nav-height;
+	}
+
+	.navbar {
+		@include nav-positioner;
+		@extend %hover-line;
+		background-color: $nav-bar-background;
+		display: none;
+		text-align: center;
+		@include mq($mq-full) {
+			display: block;
+		}
+
+		> li {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin-right: -4px;
+			line-height: $nav-bar-li-line-height;
+			padding: $nav-bar-li-padding-mobile;
+			@include mq($mq-large) {
+				padding: $nav-bar-li-padding;
+			}
+			&:before {
+				@extend %transition;
+				content: '';
+				background-image: url('/wp-content/themes/maid/images/svg/single-sparkle.svg');
+				background-repeat: no-repeat;
+				width: 61px;
+				height: 34px;
+				position: absolute;
+				top: -18px;
+				right: -22px;
+				visibility: hidden;
+				opacity: 0;
+			}
+
+			> a {
+				position: relative;
+				display: inline-block;
+				color: $secondary-color;
+				font-size: $nav-bar-link-font-size;
+				font-family: $heading-font-family;
+				line-height: $nav-bar-link-line-height;
+				padding: $nav-bar-link-padding;
+				text-transform: uppercase;
+			}
+
+		}
+
+		li.logo {
+			&:before {
+				display: none;
+			}
+
+			svg {
+				max-width: 150px;
+				max-height: 105px;
+				width: 100%;
+				height: 100%;
+				&:hover {
+
+					.sparkle-one {
+						animation: glitter ease-in-out 2s;
+						animation-iteration-count: infinite;
+						transform-origin: 120px 20px;
+
+					}
+
+					.sparkle-two {
+						animation: glitter ease-in-out 3s;
+						animation-iteration-count: infinite;
+						transform-origin: 140px 20px;
+
+					}
+
+					.sparkle-three {
+						animation: glitter ease-in-out 4s;
+						animation-iteration-count: infinite;
+						transform-origin: 128px 33px;
+					}
+				}
+			}
+		}
+
+		> li:hover,
+		> li:focus {
+			> a {
+				color: $primary-color;
+			}
+			&:before {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		> .current-menu-item,
+		> li.active {
+			cursor: pointer;
+			> a {
+				color: $primary-color;
+			}
+			&:before {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+	}
+
+	.desktop-hide {
+		display: none !important;
+	}
+
+}

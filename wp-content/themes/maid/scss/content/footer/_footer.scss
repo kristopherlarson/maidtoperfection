@@ -1,0 +1,114 @@
+/* 
+====================
+	MAIN FOOTER STYLES
+====================
+*/
+
+.footer {
+	position: relative;
+	flex: none;
+	background-color: $primary-color;
+	padding-top: rem-calc(30);
+	color: $white;
+	border-top: 6px solid $tint-primary;
+	font-size: 14px;
+
+	.kitchen-floor {
+		position: absolute;
+		top: -223px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 223px;
+		background-position: bottom center;
+	}
+
+	.flex-outer {
+		position: relative;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		@include mq(870px) {
+			flex-direction: row;
+		}
+	}
+
+	.icon-logo-footer {
+		width: 161px;
+		height: 112px;
+		margin-left: rem-calc(80);
+		@include mq(870px) {
+			max-width: 300px;
+			max-height: 169px;
+			width: 100%;
+			height: 100%;
+			margin-left: rem-calc(161);
+		}
+
+		polygon {
+			display: none;
+			@include mq(870px) {
+				display: block;
+			}
+		}
+	}
+
+	.left {
+		text-align: center;
+		order: 2;
+		margin-top: rem-calc(-15);
+		margin-bottom: $column-gutter;
+		@include mq(870px) {
+			order: 0;
+			text-align: left;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.address-wrap-top {
+		padding-bottom: 5px;
+	}
+
+	.center {
+		display: inherit;
+		order: 0;
+		@include mq(870px) {
+			order: 1;
+		}
+	}
+
+	.right {
+		order: 2;
+		text-align: right;
+		display: none;
+		@include mq(870px) {
+			display: block
+		}
+		li {
+			font-weight: $font-weight-bold;
+			text-align: left;
+		}
+	}
+
+	.footer-social {
+		text-align: left;
+		margin-top: 5px;
+		svg {
+			width: 23px;
+			height: 23px;
+			fill: $white;
+			display: inline-block;
+		}
+	}
+
+	.copyright {
+		position: absolute;
+		left: 10px;
+		bottom: 4px;
+		right: 0;
+		@include mq(870px) {
+			left: 10px;
+		}
+	}
+}

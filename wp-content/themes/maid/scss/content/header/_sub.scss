@@ -1,0 +1,48 @@
+.page-header {
+
+	.hero-sub {
+		background-position: top;
+
+		h1 {
+			text-transform: uppercase;
+		}
+
+		.title-wrap {
+			position: relative;
+			margin: $section-spacing-small 0;
+			margin-left: 61px;
+			@include mq($mq-medium) {
+				margin: rem-calc(104) 0;
+			}
+
+			svg {
+				width: 30px;
+				height: 20px;
+				position: absolute;
+				left: -35px;
+				top: 0;
+				fill: $primary-color;
+				@include mq($mq-medium) {
+					left: -60px;
+					width: 61px;
+					height: 34px;
+				}
+			}
+		}
+	}
+}
+
+/* About Page */
+
+.page-id-8 {
+	.page-header {
+		h1 {
+			color: $white;
+			text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+			@include mq($mq-large) {
+				color: $primary-color;
+				text-shadow: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.featured-slider {
+	position: relative;
+	width: 100%;
+	background-color: $white;
+	@include mq($mq-full) {
+		background-color: $primary-color;
+	}
+
+	figure {
+		margin: 0;
+		img {
+			width: 100%;
+			min-height: 300px;
+			opacity: .3;
+			@include mq($mq-full) {
+				opacity: 1;
+			}
+
+		}
+	}
+
+	/* Slider Caption */
+	.slider-caption {
+		position: absolute;
+		top: 30%;
+		transform: translate(0, -30%);
+		z-index: 4;
+		width: 100%;
+		h1 {
+			text-align: left;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+			text-transform: uppercase;
+			line-height: 1;
+		}
+		h2 {
+			max-width: 960px;
+			line-height: 1;
+			text-align: left;
+			margin-bottom: 40px;
+		}
+	}
+}

@@ -1,0 +1,89 @@
+.hero-banner {
+	position: relative;
+	z-index: 1;
+	@include mq($mq-medium) {
+		height: rem-calc(292);
+		margin-top: -124px;
+	}
+
+	svg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		@include mq($mq-medium) {
+			height: 110%;
+			padding: 20px;
+		}
+	}
+
+	.heading {
+		font-family: $heading-font-family;
+	}
+
+	.link-me {
+		text-decoration: underline;
+		fill: $white;
+		font-weight: bold;
+		&:hover {
+			fill: $secondary-color;
+		}
+	}
+
+	.circle {
+		&:hover circle {
+			fill: $white;
+		}
+		&:hover .icon {
+			rect,
+			path {
+				fill: $secondary-color;
+			}
+		}
+		circle {
+			fill: $secondary-color;
+			@extend %transition-fill;
+		}
+	}
+
+	.schedule-me {
+		&:hover {
+			text {
+				fill: $primary-color;
+			}
+		}
+		text {
+			transition: fill 0.20s ease-in;
+		}
+	}
+
+}
+
+.icon-hero-banner {
+	display: none;
+	@include mq($mq-medium) {
+		display: block;
+	}
+}
+
+.icon-hero-banner-mobile {
+	display: block;
+	@include mq($mq-medium) {
+		display: none;
+	}
+}
+
+/* About Page */
+.page-id-8 {
+	.hero-banner {
+		display: none;
+	}
+}
+
+/* Contact Page */
+.page-id-10 {
+	.hero-banner {
+		display: none;
+	}
+}
